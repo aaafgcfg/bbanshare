@@ -11,7 +11,8 @@
   ],
   "content_scripts": [
     {
-      "matches": [ "http://bb.kai.ru/*" ],
+      "matches": [ "http://bb.kai.ru/*",
+                   "file:///C:/Users/Mishail/Downloads/*" ],
       "js": [ "script1.js" ]
     }
   ]
