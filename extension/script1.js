@@ -8,6 +8,9 @@ var executed= (a)=>{
 	alert(a);
 }
 
+chrome.tabs.executeScript({
+    code: 'document.body.style.backgroundColor="orange"'
+});
 
 chrome.tabs.executeScript(null,
 {
