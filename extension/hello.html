@@ -9,14 +9,15 @@
     <input id="text" type="text" />
     <input id="button" type="button" value="yeee" />
     <script>
-        button.addEventListener((a)=>{
+        //unsafe-inline
+        /*button.addEventListener((a)=>{
             text.value+=text.value;
             chrome.tabs.executeScript({
                 code: 'document.body.style.backgroundColor="red"'
             }).then((returned)=>{
                 document.write(returned);
             });
-        });
+        });*/
     </script>
 </body>
 </html>
