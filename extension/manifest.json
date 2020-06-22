@@ -7,12 +7,17 @@
   },
   "manifest_version": 2,
   "permissions": [
-    "activeTab"
+    "activeTab",
+    "tabs",
+    "http://bb.kai.ru/*",
+    "file:///*/*"
   ],
   "content_scripts": [
     {
-      "matches": [ "http://bb.kai.ru/*",
-                   "file:///C:/Users/Mishail/Downloads/*" ],
+      "matches": [
+        "http://bb.kai.ru/*",
+        "file:///C:/Users/*"
+      ],
       "js": [ "script1.js" ]
     }
   ]
