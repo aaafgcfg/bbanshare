@@ -9,14 +9,11 @@
   "permissions": [
     "activeTab",
     "tabs",
-    "http://bb.kai.ru/*",
     "file:///*/*"
   ], 
-  "content_security_policy": "unsafe-inline",
   "content_scripts": [
     {
       "matches": [
-        "http://bb.kai.ru/*",
         "file:///C:/Users/*"
       ],
       "js": [ "script1.js" ]
