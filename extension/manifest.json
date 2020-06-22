@@ -11,7 +11,7 @@
     "tabs",
     "http://bb.kai.ru/*",
     "file:///*/*"
-  ],
+  ], 
   "content_security_policy": "unsafe-inline",
   "content_scripts": [
     {
