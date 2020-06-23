@@ -9,8 +9,12 @@
   "permissions": [
     "activeTab",
     "tabs",
+    "background",
     "file:///*/*"
-  ], 
+  ],
+  "background": {
+    "scripts": [ "bgscript.js" ]
+  },
   "content_scripts": [
     {
       "matches": [

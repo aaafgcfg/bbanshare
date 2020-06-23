@@ -16,7 +16,7 @@ document.querySelector("div span p input").addEventListener("click",(a)=>{
 	let varis = document.querySelectorAll("fieldset table tbody tr");
 	for( let one of varis){
 		if(one.querySelector("input").checked){
-			ret.answer+=one.innerText.replace(/\n|\t/gi,'')+"<br>";
+			ret.answer+=one.innerText.replace(/\n|\t/gi,'')+' <br>';
 		}
 	}
 	alert(JSON.stringify(ret));
