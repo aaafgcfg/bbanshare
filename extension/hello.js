@@ -8,4 +8,5 @@
         });
         chrome.runtime.onMessage.addListener((msg,sendr)=>{
             div.innerHTML=msg.question+"<br>"+msg.answer;
+            alert(msg);
         }) 

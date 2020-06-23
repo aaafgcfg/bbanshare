@@ -5,9 +5,6 @@
 //document.querySelector("div div.f4 span");
 
 
-chrome.tabs.executeScript({
-    code: 'document.body.style.backgroundColor="orange"'
-});
 
 
 document.querySelector("div span p input").addEventListener("click",(a)=>{
@@ -15,14 +12,14 @@ document.querySelector("div span p input").addEventListener("click",(a)=>{
 		"question":"",
 		"answer":""
 	};
-	alert("ah");
-	ret.question = document.querySelector("fieldset legend").innerText;
+	ret.question = document.querySelector("fieldset legend").innerText.replace(/\n|\t/gi,'');
 	let varis = document.querySelectorAll("fieldset table tbody tr");
 	for( let one of varis){
 		if(one.querySelector("input").checked){
-			ret.answer+=one.innerText+"\n";
+			ret.answer+=one.innerText.replace(/\n|\t/gi,'')+"<br>";
 		}
 	}
+	alert(JSON.stringify(ret));
 	chrome.runtime.sendMessage(null, ret);
 })
 

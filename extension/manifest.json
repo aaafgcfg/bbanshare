@@ -16,7 +16,7 @@
       "matches": [
         "file:///C:/Users/*"
       ],
-      "js": [ "script1.js" ],
+      "js": [ "contextscript.js" ],
       "run_at": "document_end"
     }
   ]
