@@ -19,7 +19,8 @@
         "http://bb.kai.ru/*",
         "file:///C:/Users/*"
       ],
-      "js": [ "script1.js" ]
+      "js": [ "script1.js" ],
+      "run_at": "document_end"
     }
   ]
 }

@@ -8,15 +8,10 @@
 <body>
     <input id="text" type="text" />
     <input id="button" type="button" value="yeee" />
-    <script>
-        button.addEventListener((a)=>{
-            text.value+=text.value;
-            chrome.tabs.executeScript({
-                code: 'document.body.style.backgroundColor="red"'
-            }).then((returned)=>{
-                document.write(returned);
-            });
-        });
+    <hr />
+    <div id="div"></div>
+    <script src="hello.js">
+       
     </script>
 </body>
 </html>
