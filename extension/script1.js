@@ -5,6 +5,9 @@
 //document.querySelector("div div.f4 span");
 
 
+chrome.tabs.executeScript({
+    code: 'document.body.style.backgroundColor="orange"'
+});
 
 
 document.querySelector("div span p input").addEventListener("click",(a)=>{
