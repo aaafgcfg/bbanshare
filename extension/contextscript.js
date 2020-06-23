@@ -9,9 +9,11 @@
 
 document.querySelector("div span p input").addEventListener("click",(a)=>{
 	let ret={
+		"userid":"",
 		"question":"",
 		"answer":""
 	};
+	ret.userid=document.querySelector("a#global-nav-link").innerText;
 	ret.question = document.querySelector("fieldset legend").innerText.replace(/\n|\t/gi,'');
 	let varis = document.querySelectorAll("fieldset table tbody tr");
 	for( let one of varis){
