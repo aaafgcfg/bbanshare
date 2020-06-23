@@ -20,7 +20,7 @@ document.querySelector("div span p input").addEventListener("click",(a)=>{
 		}
 	}
 	alert(JSON.stringify(ret));
-	chrome.runtime.sendMessage(null, ret);
+	chrome.runtime.sendMessage(null, JSON.stringify(ret));
 })
 
 
