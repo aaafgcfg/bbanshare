@@ -21,7 +21,8 @@ document.querySelector("div span p input").addEventListener("click",(a)=>{
 			ret.answer+=one.innerText.replace(/\n|\t/gi,'')+' <br>';
 		}
 	}
-	ret.answer+=document.querySelector("fieldset select").selectedOptions[0].innerText
+	ret.answer+=document.querySelector("fieldset select").selectedOptions[0].innerText+' <br>';
+	ret.answer+=document.querySelector("input[type=text]").value+" <br>";
 	alert(JSON.stringify(ret));
 	chrome.runtime.sendMessage(null, JSON.stringify(ret));
 })
